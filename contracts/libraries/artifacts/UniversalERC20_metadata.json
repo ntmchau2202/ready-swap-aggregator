@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/libraries/UniversalERC20.sol": "UniversalERC20"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/interfaces/IERC20.sol": {
+			"keccak256": "0x8d5b901a19403a0d23fd8797fcfa21c513f8c1c034f22d48b9b27b86adb8cc04",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ab794ea2092fdfb9bc26f3f55e7aa5ef24293449623d85eee35e538c8fd1a589",
+				"dweb:/ipfs/QmPpS6QjnwXhsYaTJ2QDxGRtjc1AzoXoFj5KHUR9cVXrKj"
+			]
+		},
+		"contracts/libraries/Address.sol": {
+			"keccak256": "0x32c67e88fb18a8cb6f1e6a5dbfab6d7fc04d598902226b22a08b33821ada2651",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4aaa7dcd5ea66894cf788b64725a5e9668cd29d1c7cd96ae51f840e133e70c8a",
+				"dweb:/ipfs/QmdgGuJJyrc3mMU9pDwofLS8UMBsuwwf2GuSTHWc1NzyXe"
+			]
+		},
+		"contracts/libraries/SafeERC20.sol": {
+			"keccak256": "0x80035092de02dee89e7e5b0e5b093b4899b61ca32f70e471069481aac3497c29",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://582a9a0d762ff5aae517f3c39d970523463fcac74818263e35a884f997aa0d42",
+				"dweb:/ipfs/QmYBY9eHqawthVr9MqkVr5gkx9GXxDTigRg7NQqZRFvUC9"
+			]
+		},
+		"contracts/libraries/SafeMath.sol": {
+			"keccak256": "0x52942995609f169207ae8b5143789daf62ba42d7f3b9e5de6d32d30097b012cb",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e2a4f3fa0607ad00fd5f04725e2be5b9906f50576fdf16d62ff28dd138321eaa",
+				"dweb:/ipfs/QmT2znNzNBdFNZF9JJKK6KS5h8qAxN2bVaSb5qVwtSw9J4"
+			]
+		},
+		"contracts/libraries/UniversalERC20.sol": {
+			"keccak256": "0x0c2065c3c9cd71fe863c4f01e0a5c6a4db607c19bd7378d5f1c1528e87dc2a5a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1dcdd650d1500790466369b77b68bb3986ed9abb6cd391a7abc9c9b2f3c81d25",
+				"dweb:/ipfs/QmRDbBvVR39bY68tPJ73efs5648JzASMbRhCiz6gu4E5m2"
+			]
+		}
+	},
+	"version": 1
+}

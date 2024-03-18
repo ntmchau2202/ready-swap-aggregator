@@ -1,0 +1,227 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "member",
+						"type": "address"
+					}
+				],
+				"name": "MemberAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "member",
+						"type": "address"
+					}
+				],
+				"name": "MemberRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_member",
+						"type": "address"
+					}
+				],
+				"name": "addMember",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_member",
+						"type": "address"
+					}
+				],
+				"name": "isMember",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_member",
+						"type": "address"
+					}
+				],
+				"name": "removeMember",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Alberto Cuesta Canada",
+			"details": "Implements a simple whitelist of addresses.",
+			"kind": "dev",
+			"methods": {
+				"addMember(address)": {
+					"details": "A method to add a member to the whitelist",
+					"params": {
+						"_member": "The member to add as a member."
+					}
+				},
+				"constructor": {
+					"details": "The contract constructor."
+				},
+				"isMember(address)": {
+					"details": "A method to verify whether an address is a member of the whitelist",
+					"params": {
+						"_member": "The address to verify."
+					},
+					"returns": {
+						"_0": "Whether the address is a member of the whitelist."
+					}
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"removeMember(address)": {
+					"details": "A method to remove a member from the whitelist",
+					"params": {
+						"_member": "The member to remove as a member."
+					}
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"title": "Whitelist",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/helpers/Whitelist.sol": "Whitelist"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/helpers/Context.sol": {
+			"keccak256": "0x732ed9a6d5f3c9c53cbc22c9cdfb48ef2796172a86d060e8fec0a0eafa6038db",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4a19c14d4f436e0da41dc41a7ab1136e5642df5ea1432dad511ad0cb2e833c9d",
+				"dweb:/ipfs/QmTttgkPXmJcEQMrFKtj4him4E823LR2CQHbX8ERhTy6JP"
+			]
+		},
+		"contracts/helpers/Ownable.sol": {
+			"keccak256": "0xfc89d035f3f82c3b8babe828d015ebc3b8100697233e0ffa7a3ffb921f19cd33",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3bb01842ab8293dfa9bbd32f387ab8825459050e7db18a33168e59fad32f5aaa",
+				"dweb:/ipfs/QmREjYm1xx42SSHBq8o9MDxndAvx6xKt5hbbYzQFsDy1YU"
+			]
+		},
+		"contracts/helpers/Whitelist.sol": {
+			"keccak256": "0x22ea921a6237891e53ddcbf049aeaf3791267947e5fd2f318291baf4544d29ea",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c0d079a6378403fd0ba35d15a11384d2fecb74ef8e1ad73cd6809b10a8812835",
+				"dweb:/ipfs/QmchhY2W1PoJ7K5vuQpDxHYH8FLh6inbTX9wo3CnCuS6JN"
+			]
+		}
+	},
+	"version": 1
+}

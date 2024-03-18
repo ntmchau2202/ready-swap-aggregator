@@ -1,0 +1,113 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"events": {
+				"Paused(address)": {
+					"details": "Emitted when the pause is triggered by `account`."
+				},
+				"Unpaused(address)": {
+					"details": "Emitted when the pause is lifted by `account`."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Initializes the contract in unpaused state."
+				},
+				"paused()": {
+					"details": "Returns true if the contract is paused, and false otherwise."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/helpers/Pausable.sol": "Pausable"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/helpers/Context.sol": {
+			"keccak256": "0x732ed9a6d5f3c9c53cbc22c9cdfb48ef2796172a86d060e8fec0a0eafa6038db",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4a19c14d4f436e0da41dc41a7ab1136e5642df5ea1432dad511ad0cb2e833c9d",
+				"dweb:/ipfs/QmTttgkPXmJcEQMrFKtj4him4E823LR2CQHbX8ERhTy6JP"
+			]
+		},
+		"contracts/helpers/Pausable.sol": {
+			"keccak256": "0xfb8b994c2e9f1275df3e0763e826eff75591c0d26610851aa17f284e448cb56b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://9b6cedc6a79999b0b57c368e759355ca8ec36373b3f5cf557f4699affacf47fa",
+				"dweb:/ipfs/QmV6WbTN4dU6VVeLMKMgYGExfcgESjMuvgKW72HoZjNEVj"
+			]
+		}
+	},
+	"version": 1
+}
